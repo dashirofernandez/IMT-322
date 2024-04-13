@@ -1,6 +1,6 @@
 #define PIN_PULSADOR_1 5
 #define PIN_PULSADOR_2 18
-
+#define PIN_BOTONO 19
 
 // Variable para almacenar el contador
 volatile int contador = 0;
