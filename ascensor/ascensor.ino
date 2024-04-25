@@ -22,7 +22,7 @@ void loop() {
       	Serial.println("En camino al piso 1");
       	for (int i = 0; i <= 100; i++) {
     		Serial.print("\r");
-    		Serial.print("Cargando: ");
+    		Serial.print("En movimiento: ");
     		Serial.print(i);
     		Serial.print("%");
     		delay(100); 
@@ -35,7 +35,7 @@ void loop() {
       	Serial.println("En camino al piso 2");
       	for (int i = 0; i <= 100; i++) {
     		Serial.print("\r");
-    		Serial.print("Cargando: ");
+    		Serial.print("En movimiento: ");
     		Serial.print(i);
     		Serial.print("%");
     		delay(100); 
@@ -48,7 +48,7 @@ void loop() {
       	Serial.println("En camino al piso 3");
       	for (int i = 0; i <= 100; i++) {
     		Serial.print("\r");
-    		Serial.print("Cargando: ");
+    		Serial.print("En movimiento: ");
     		Serial.print(i);
     		Serial.print("%");
     		delay(100); 
