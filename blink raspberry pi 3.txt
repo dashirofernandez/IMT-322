@@ -1,0 +1,20 @@
+import RPi.GPIO as GPIO
+import time
+
+# Configurar el modo de los pines GPIO
+GPIO.setmode(GPIO.BCM)  # Usa la numeración BCM
+GPIO.setwarnings(False)
+
+# Configuración del pin
+led_pin = 17  # Pin GPIO que estás usando
+GPIO.setup(led_pin, GPIO.OUT)
+
+try:
+    while True:
+        GPIO.output(led_pin, GPIO.HIGH)  # Enciende el LED
+        time.sleep(1)  # Espera 1 segundo
+        GPIO.output(led_pin, GPIO.LOW)   # Apaga el LED
+        time.sleep(1)  # Espera 1 segundo
+except KeyboardInterrupt:
+    # Limpia la configuración GPIO cuando se interrumpe el programa
+    GPIO.cleanup()
